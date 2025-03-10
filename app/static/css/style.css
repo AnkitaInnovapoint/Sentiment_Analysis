@@ -1,0 +1,75 @@
+/* Custom styles for sentiment analysis dashboard */
+
+.sentiment-display {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+.sentiment-emoji {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sentiment-text {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Sentiment colors */
+.very-positive {
+    color: #28a745;
+    background-color: #d4edda;
+}
+
+.positive {
+    color: #20c997;
+    background-color: #d1f2ea;
+}
+
+.neutral {
+    color: #6c757d;
+    background-color: #e9ecef;
+}
+
+.negative {
+    color: #dc3545;
+    background-color: #f8d7da;
+}
+
+.very-negative {
+    color: #721c24;
+    background-color: #f5c6cb;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Custom form styles */
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Chart container */
+#sentimentChart {
+    height: 400px;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    #sentimentChart {
+        height: 300px;
+    }
+} 
